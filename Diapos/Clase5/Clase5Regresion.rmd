@@ -31,9 +31,9 @@ options("kableExtra.html.bsTable" = T)
 ## Altura versus DAP
 
 ```{r}
-githubURL <- ("https://raw.githubusercontent.com/Curso-programacion/Datos_Arboles/master/Data.rds")
-download.file(githubURL,"Data.rds", method="curl")
-Data <- read_rds("Data.rds")
+#githubURL <- ("https://raw.githubusercontent.com/Curso-programacion/Datos_Arboles/master/Data.rds")
+#download.file(githubURL,"Data.rds", method="curl")
+Data <- read_rds("https://raw.githubusercontent.com/Curso-programacion/Datos_Arboles/master/Data.rds")
 ```
 
 ```{r, echo = F, include=FALSE}
@@ -213,9 +213,9 @@ ggplot(DF, aes(x = x, y = y)) +
 ## Datos de temperatura y humedad
 
 ```{r}
-githubURL <- ("https://raw.githubusercontent.com/derek-corcoran-barrios/derek-corcoran-barrios.github.io/master/Clase4/TempHum.rds")
-download.file(githubURL,"TempHum.rds", method="curl")
-TempHum <- read_rds("TempHum.rds") %>% 
+#githubURL <- ("https://raw.githubusercontent.com/derek-corcoran-barrios/derek-corcoran-barrios.github.io/master/Clase4/TempHum.rds")
+#download.file(githubURL,"TempHum.rds", method="curl")
+TempHum <- read_rds("https://raw.githubusercontent.com/derek-corcoran-barrios/derek-corcoran-barrios.github.io/master/Clase4/TempHum.rds") %>% 
   mutate(Mes = as.numeric(Mes))
 ```
 
